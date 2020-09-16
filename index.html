@@ -17,16 +17,15 @@
 <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#d5cf5b">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main1.css">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
 <noscript>
   <p style="color:white;font-family:'Poppins', sans-serif">Please enable Javascript. Some elements of this website may not work with Javascript disabled.</p>
   <style>
@@ -44,63 +43,73 @@
 <!--F0B676 colour-->
 <body>
   
-  <!-- Skip links --> 
+  <!-- SKIP LINKS --> 
 
   <ul id="skiplinks">
 	<li><a href="#navigation">Skip to navigation</a></li>
 	<li><a href="#main-content">Skip to main content</a></li>
   </ul>
 
-
-  
-        <!-- NAVIGATION -->
+  <!-- NAVIGATION -->
 
 	  	<div class="nav-bar">
 				<span id="text-logo">SDTA</span>
-
-				
-
-				<button id="nav-menu-button" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">Menu</button>
+				<button class="nav-menu-button" id="open" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                <!-- nav button -->
+                    <div class="nav-icon">
+                    </div>
+				</button>
 					<div id="mobile-nav-overlay">
 						<nav id="mobile-menu">
 							<ul>
 								<li><a href="index.php">Home</a></li>
-								<li><a href="index.php#about">About</a></li>
-								<li><a href="servicessectors.php">Services & Sectors</a></li>
+								<li><a href="about.php">About</a></li>
+								<li><a href="classes.php">Classes</a></li>
 								<li><a href="index.php#contact">Contact</a></li>
 							</ul>
 						</nav>
-						<button id="nav-close-button" type="button">Close
+						<button class="nav-menu-button" id="close" type="button">
+						<!-- nav button close -->
+						    <div class="nav-icon-close">
+                            </div>
 						</button>
 					</div>
 	  	</div>
 
-	  	<!-- NAVIGATION END -->
+  <!-- NAVIGATION END -->
     
     <main>
 
+
+    <!-- WRAPPER -->
 	<div id="main-content" class="content-container">
+
+	      <h1 class="title">Synergy Dance
+		  <br> Training Academy</h1>
+
+    <!-- HOME div -->
 
 		  <div id="main-fullscreen-home" class="main-fullscreen">
 
 		  	<!-- Set background image -->
-
 						<div class="main-img-overlay">
-						</div>
-
-						
+						</div>		
 		  </div>
 
-			  <!--START OF SECTIONAL CONTENT-->
 
-			  <div id="about" class="flex-container">
+    
+    <!--START OF SECTIONAL CONTENT-->
+
+    <!--about-->
+
+		  <div id="about" class="flex-container1">
 					
 					<div class="flex-item">
 						<div class="flex-inner-container-1">
 
 							<h2 class="section-title fade-in-left">About</h1>
 							
-							<hr class="breakline fade-in-scroll">
+							<!--<hr class="breakline">-->
 						</div>
 					</div>
 
@@ -114,70 +123,67 @@
 						</div>
 					</div>
 
-			  </div>
+		   </div>
 
+    <!--classes-->
 
-			  <div id="classes" class="flex-container">
+		   <div id="classes" class="flex-container">
 
-			  	<div class="section-img-overlay">
-				</div>
+			  	
 					
 					<div class="flex-item">
 						<div class="flex-inner-container-1">
 
 							<h2 class="section-title fade-in-left">Classes</h1>
 							
-							<hr class="breakline fade-in-scroll">
+							<!--<hr class="breakline">-->
 						</div>
 					</div>
 
 					<div class="flex-item">
 						<div class="flex-inner-container-2">
 
-							<p class="section-p fade-in-scroll">
+							<p class="section-content fade-in-scroll">
 								Synergy offers a range of classes for all ages. We offer classes that cover multiple
 								styles of dance and support many different abilities, from beginners to advanced dancers.
-								For more information about thte styles we offer, or to view our timetable, click here.</p>
+								For more information about the styles we offer, or to view our timetable, click here.</p>
 						</div>
 					</div>
 
-			  </div>
+			</div>
 
+    <!--contact-->
 
+		   <div id="contact" class="flex-container">
 
-			  
+			  	
+					
+					<div class="flex-item">
+						<div class="flex-inner-container-1">
 
-			  <!--END OF SECTIONAL LAYOUT-->
+							<h2 class="section-title fade-in-left">Contact Us</h1>
+							
+							<!--<hr class="breakline">-->
+						</div>
+					</div>
 
-			  
-			  <!--FLEXBOX layout mobile:column, desktop/tablet:row-->
+					<div class="flex-item">
+						<div class="flex-inner-container-2">
 
-					  <div id="contact" class="flex-container">
+							<p id="contact-content" class="section-content fade-in-scroll">
+							For enquiries please email email@email.com or call 07123456789. Find us on social media below.</p>
 
-							<div class="flex-item">
-								<div class="flex-inner-container-1">
-									<h2 class="section-title fade-in-left">Contact Us</h1>
-									<hr class="breakline">
-								</div>
-							</div>
+							<ul id="contact-list">
+								<li><a class="title" href="https://www.facebook.com/SynergyDanceAcademy1">Facebook</a></li>
+								<li><a class="handle" href="https://www.facebook.com/SynergyDanceAcademy1">@synergydanceacademy1</a></li>
+								<li><a class="title" href="https://www.instagram.com/synergydancetrainingacademy/">Instagram</a></li>
+								<li><a class="handle" href="https://www.instagram.com/synergydancetrainingacademy/">@synergydancetrainingacademy</a></li>
+							</ul>
+						</div>
+					</div>
 
-							<div class="flex-item">
-								<div class="flex-inner-container-2">
+			</div>
 
-									<ul class="contact-list fade-in-scroll">
-										<li id="number"><a href="tel:"></a></li>
-										<li><span id="enquiries"></span></li>
-										<li><a href="https://www.facebook.com/visionsafetyservices/">Facebook</a></li>
-										<li><a href="https://twitter.com/VisionSafetySe1">Twitter</a></li>
-										<li><a href="https://www.linkedin.com/company/vision-safety-services/">LinkedIn</a></li>
-									</ul>
-
-								</div>
-							</div>
-
-					  </div>
-
-				<!-- END OF FLEXBOX LAYOUT-->
 
 	</div>
 </main>
@@ -194,6 +200,8 @@
 		</div>
   </footer>
 
-<script src="js/script.js"></script>
+  <script src="js/script1.js"></script>
+</body>
+</html>  <script src="js/script1.js"></script>
 </body>
 </html>
